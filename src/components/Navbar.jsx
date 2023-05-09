@@ -12,10 +12,10 @@ const Navbar = () => {
   }
 
   return (
-    <div className="navbar fixed z-10 bg-neutral text-neutral-content">
+    <div className="navbar fixed z-10 bg-blue text-neutral-content">
       <div className="containerWrap flex justify-between">
-        <a className="btn btn-ghost normal-case text-xl">instantChat</a>
-        {currentUser ? <button onClick={handleLogout}>Logout</button> : ""}
+        <a className="btn btn-ghost normal-case text-xl">Instant Chat</a>
+        {currentUser ? <button onClick={handleLogout} className="normal-case text-xl">Logout</button> : ""}
       </div>
     </div>
   )
